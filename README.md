@@ -82,4 +82,4 @@ Airlines in our **2018** data (check the `airline2018_lookup.csv` in our 'data' 
 
 ##### Pick up airports
 
-There are 360 **origin** and **destination** airports in our 2018 dataset. See the `airport2018_lookup.csv` in our 'data' file. This file contains airports' codes and their names.
+There are 359 **origin** and **destination** airports in our 2018 dataset. See the `airport2018_lookup.csv` in our 'data' file. This file contains airports' codes and their names.
