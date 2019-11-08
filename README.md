@@ -35,6 +35,36 @@ time = year, month, day
 ### Arrived Airport
 ----
 
+
+To do:
+- Maps: arrival (changed from departure)
+- Statistical description of airlines: number of flights per airline
+- Airlines vs departure delay (intervals), scatter plot
+- Scoring system
+	- formula
+	- implementation
+- Delay distribution to establish ranking of airlines
+- Delay airlines by cities (heat map)
+- Jupyter compliation & GitHub
+
+Completed:
+- For 18 airlines, stacked plot of reasons why the airline was delayed 
+- For 18 airlines, stacked plot delay rate and on-time/advanced time (normalized)
+- For 18 airlines, stacked plot delay and on-time/advanced time (not normalized), sorted ascending
+- Map of all airports in US
+- Departure map of airport, color maps
+
+Outline of presentation: 
+- Introduction: background, maps of airports
+- Visualization:
+	- Delay (day, month, year)
+		- all airline & delay rate, on-time/advanced
+    - reasons why airline delayed
+	- Cancelations:
+		- reasons
+- How can this visualization help us? With a scoring system
+
+
 #### Information Might be Useful
 
 ##### Pick up airlines
