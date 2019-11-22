@@ -38,13 +38,13 @@ time = year, month, day
 
 To do:
 - Maps: arrival (changed from departure)
-- Statistical description of airlines: number of flights per airline
+✔️✔️✔️- Statistical description of airlines: number of flights per airline
 - Airlines vs departure delay (intervals), scatter plot
-- Scoring system
+✔️✔️✔️- Scoring system
 	- formula
 	- implementation
 - Delay distribution to establish ranking of airlines
-- Delay airlines by cities (heat map)
+???- Delay airlines by cities (heat map)
 - Jupyter compliation & GitHub
 
 Completed:
@@ -74,55 +74,57 @@ total tips:
 4) attention to the line's colors( shadow, deep, choice of colors
 ## from the proposal
 outlines:
-① identify correkations between delays(cancellatons)between other paramaters(airlines,airports,travel seasons)
+① identify correlations between delays(cancellatons)between other paramaters(airlines,airports,travel seasons)
 1) delay time： 
-2008年到2019年的每年的average delay time ，
-2018年每个月的 average delay time ， 
-找六月的 average delay time
-加上18个airlines， XX个airports，
-plot: aera plot or line chart or 水平柱状图（x轴 delay time，y轴每个月+每个airpot） or 做成matrix 颜色深浅表示delay time多少
+///2008年到2019年的每年的average delay time ，
 
-delay time在 airline/airport的分布
-plot:stack bar： 三个bar：lagre delay>45' small delay 5'< <45‘  on time <5'  在每个airport or airline 各自占的百分比 
+	2018年每个月的 average delay time ， 
+	找六月的 average delay time
+	加上18个airlines， 
+	plot: aera plot or line chart or 水平柱状图（x轴 delay time，y轴每个月+每个airpot） or 做成matrix 颜色深浅表示delay time多少
+
+	delay time在 airline的分布
+/// plot:stack bar： 三个bar：lagre delay>45' small delay 5'< <45‘  on time <5'  在每个 or airline 各自占的百分比 
 
 不同的delay reason 有不同的时间,在每次发生delay上的占比， x轴为？？？？
 plot：stack bar y轴不同的航空公司 
 
-每个airline每年的delay time 的分布
+	每个airline每年的delay time 的分布
+	plot： box chart x轴为每个airline，y轴为 delay time 的分布 的箱线图(有grid比较清楚
+
+///每个airport每年的delay time 的分布
 plot： box chart x轴为每个airline，y轴为 delay time 的分布 的箱线图(有grid比较清楚
 
-每个airport每年的delay time 的分布
-plot： box chart x轴为每个airline，y轴为 delay time 的分布 的箱线图(有grid比较清楚
+	2018年每个airline delay time对比
+	plot： 横向柱状图 y轴 18个airlines x轴 2018年的avg delay time（avg到每个航班
 
-2018年每个airline delay time对比
-plot： 横向柱状图 y轴 18个airlines x轴 2018年的avg delay time（avg到每个航班
-
-2018年每个airport delay time对比
+///2018年每个airport delay time对比
 plot： 横向柱状图 y轴 XX个airports x轴 2018年的avg delay time（avg到每个航班
 
 
 2）delay frequency：
-2008年到2019年的每年的average delay frequency ，
-2018年每个月的 average delay frequency， 
+///2008年到2019年的每年的average delay frequency ，
+2018年每个月的  delay frequency， 
 找六月的 average delay frequency，
- 加上18个airlines， XX个airports，
+ 加上18个airlines
 plot: aera plot or line chart or 做成matrix 颜色深浅表示delay frequency多少
 
-每个airline每年的delay frequency 的分布
+///每个airline每年的delay frequency 的分布
 plot： box chart x轴为每个airline，y轴为 delay frequency 的分布 的箱线图
 
-2018年每个airline delay frequency对比
+///2018年每个airline delay frequency对比
 plot： 横向柱状图 y轴 18个airlines x轴 2018年的avg delay frequency（avg到每个航班
 
-2018年每个airport delay frequency对比
+///2018年每个airport delay frequency对比
 plot： 横向柱状图 y轴 XX个airports x轴 2018年的avg delay frequency（avg到每个航班
 
 
 3)cancellation frequency
-2008年到2019年的每年的average cancellation frequency ，
-2018年每个月的 average cancellation frequency， 
-找六月的 average cancellation frequency，
- 加上18个airlines， XX个airports，
+///2008年到2019年的每年的average cancellation frequency ，
+1.2018年每个月的 average cancellation frequency， 
+2.找六月的 average cancellation frequency，
+ 加上18个airlines
+ 3.Total cancellation times vs airlines
 plot: aera plot or line chart 
 
 
