@@ -44,7 +44,10 @@ def plt_stats(name):
     y = []
     length = []
     for stat in airlines_stats.columns:
-        length.append(r*airlines_stats.loc[name][stat]/max(list(airlines_stats[stat])))
+      if airlines_stats.loc[name][stat]>0:
+        length.append(r*(1-airlines_stats.loc[name][stat]/max(list(airlines_stats[stat]))))
+      else:
+          length.append(r)
     for (i,j) in zip(length,an_axis):
         x.append(i * np.cos(j))
         y.append(i * np.sin(j))
