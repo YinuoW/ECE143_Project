@@ -1,13 +1,14 @@
+# This is used to generate the `2018.csv` using raw data
 import os
 import glob
 import pandas as pd
-os.chdir("./data")
+os.chdir("./raw_data")
 
 extension = 'csv'
 all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
-#print(all_filenames)
+print(all_filenames)
 
 #combine all files in the list
 combined_csv = pd.concat([pd.read_csv(f) for f in all_filenames])
 #export to csv
-combined_csv.to_csv("2018.csv", index=False)
+combined_csv.to_csv("../data/2018.csv", index=False)

@@ -1,5 +1,7 @@
-# This file plot the scoring map of 6 airlines:
-# 'Alaska Airlines','Delta Air Lines','Hawaiian Airlines','Frontier Airlines','Allegiant Air','JetBlue Airways'
+'''
+This file plot the scoring map of 6 airlines:
+'Alaska Airlines','Delta Air Lines','Hawaiian Airlines','Frontier Airlines','Allegiant Air','JetBlue Airways'
+'''
 
 import pandas as pd
 import numpy as np
