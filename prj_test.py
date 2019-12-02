@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-file='2018.csv'
+file='./data/2018.csv'
 data=pd.read_csv(file) #read file
 uncancelled_flights=data.loc[data['CANCELLED']==0] #data excluding cancelled flights
 airlines=set(data['OP_CARRIER']) #set of names of airlines
