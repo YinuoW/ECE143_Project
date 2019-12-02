@@ -35,7 +35,7 @@ There are `.py` files in each folder.
 
 #### Step1: get the dataset `2018.csv`
 
-Since our main dataset is to large to upload, you will need to generate it from raw data.
+Since our main dataset is too large to upload, you will need to generate it from raw data.
 To get the `2018.csv`, run the `merge.py` first.
 
 #### Step2: select one folder and get the corresponding extracted data from the dataset

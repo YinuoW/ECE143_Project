@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dafcd761-2b78-44bb-b523-54a3f8e7f596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_by_15min/15_freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AL_delay_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AL_delay_distribution_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/airline_delay_distribution/AL_delay_distribution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/air_code_extraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airline_stats_triangle/airline_stats_triangle_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/airline_stats_triangle/airline_stats_triangle_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box_line_delay_vs_airline_in2018/box_line_delay_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/box_line_delay_vs_airline_in2018/box_line_delay_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_flight_airlines.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights_count_per_airline/count_flight_airlines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/11.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/12.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/9.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Airline_Lookup.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Airport_Lookup.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/airport-codes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/dep_delay_choropleth.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_flights_choropleth/dep_delay_choropleth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_number/delay_freq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_number/delay_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_ontime_flights_number/delay_ontime_flights_number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_rate/delay_freq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_rate/delay_freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_rate/delay_rate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reason.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_reason/reason.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reasons_piechart.py" beforeDir="false" afterPath="$PROJECT_DIR$/delay_reason/reasons_piechart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reasons_vs_airline" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score_barh/score_barh.py" beforeDir="false" afterPath="$PROJECT_DIR$/score_barh/score_barh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score_barh/score_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_blk_scatter/myplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_blk_scatter/time_block_scatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/time_blk_scatter/time_block_scatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_block_barh/time_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/time_block_barh/time_block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_block_barh/time_block_v2.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delay_by_15min/15_freq.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="12">
@@ -58,6 +20,18 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="555">
+                <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -125,8 +99,8 @@
         <option value="$PROJECT_DIR$/cancellation/cancelled_flights_by_months.py" />
         <option value="$PROJECT_DIR$/cancellation/cancelled_flight_number.py" />
         <option value="$PROJECT_DIR$/delay_heatmap.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Delay_by_month/delay_heatmap.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -717,16 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="412">
-            <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/air_code_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -744,6 +708,16 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="555">
+            <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
