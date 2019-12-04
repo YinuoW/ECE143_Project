@@ -10,6 +10,7 @@ airlines_name={'F9':'Frontier Airlines', '9E':'Endeavor Air', 'EV':'ExpressJet A
                'AS':'Alaska Airlines', 'OH':'PSA Airlines', 'G4':'Allegiant Air', 'WN':'Southwest Airlines', 'NK':'Spirit Airlines', 'B6':'JetBlue Airways'}
 reasons_vs_airline=reasons_vs_airline.rename(index=airlines_name)
 airlines=list(reasons_vs_airline.index)
+
 # visualization
 bars = np.add(reasons_vs_airline['CARRIER_DELAY'],reasons_vs_airline['WEATHER_DELAY']).tolist()
 bars1 = np.add(bars,reasons_vs_airline['SECURITY_DELAY']).tolist()
