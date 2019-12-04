@@ -40,7 +40,7 @@ To get the `2018.csv`, run the `merge.py` first.
 
 #### Step2: select one folder and get the corresponding extracted data from the dataset
 
-In some folders, there are source files endding with `extraction`.
+In some folders, there are source files ending with `extraction`.
 Run these files first to get the extracted `.csv` files to make the plots.
 
 #### Step3: genetate plots
