@@ -3,46 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dafcd761-2b78-44bb-b523-54a3f8e7f596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delay_by_month/delay_by_month.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delay_by_month/delay_by_month.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delay_by_month/delay_heatmap.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delay_by_month/delay_heatmap.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delay_by_month/delay_heatmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delay_by_month/delay_heatmap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airline_delay_distribution/AL_delay_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airline_delay_distribution/AL_delay_distribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airline_stats_triangle/airline_stats_triangle_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airline_stats_triangle/airline_stats_triangle_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airline_stats_triangle/airline_stats_triangle_plot_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airline_stats_triangle/airline_stats_triangle_plot_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airline_stats_triangle/airlines_stats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/airline_stats_triangle/airlines_stats.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box_line_delay_vs_airline_in2018/box_line_delay_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/box_line_delay_vs_airline_in2018/box_line_delay_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box_line_delay_vs_airline_in2018/box_line_delay_vs_airline_in2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/box_line_delay_vs_airline_in2018/box_line_delay_vs_airline_in2018.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancellation/cancellation_rate_colorbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cancellation/cancellation_rate_colorbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancellation/cancelled_flight_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cancellation/cancelled_flight_number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancellation/cancelled_flights_by_months.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cancellation/cancelled_flights_by_months.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancellation/total_cancellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cancellation/total_cancellation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_by_15min/15_freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_by_15min/15_freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/arr_delay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/arr_delay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/dep_delay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/dep_delay.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/dep_delay_choropleth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/dep_delay_choropleth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/dep_delay_choropleth_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/dep_delay_choropleth_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/flights.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/flights.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_flights_choropleth/states_stats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_flights_choropleth/states_stats.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_ontime_flights_number/delay_number.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_ontime_flights_number/delay_number.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_ontime_flights_number/delay_ontime_flights_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_ontime_flights_number/delay_ontime_flights_number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_ontime_flights_number/delay_ontime_flights_number_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_ontime_flights_number/delay_ontime_flights_number_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_rate/delay_rate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_rate/delay_rate.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_rate/delay_rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_rate/delay_rate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_rate/delay_rate_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_rate/delay_rate_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reason.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_reason/reason.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reason_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_reason/reason_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reason_distribution_vs_airline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_reason/reason_distribution_vs_airline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reasons_piechart.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_reason/reasons_piechart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delay_reason/reasons_vs_airline.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/delay_reason/reasons_vs_airline.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights_count_per_airline/count_flight_airline_colorbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flights_count_per_airline/count_flight_airline_colorbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights_count_per_airline/count_flight_airlines.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flights_count_per_airline/count_flight_airlines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score_barh/score_barh.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/score_barh/score_barh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score_barh/score_barh_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/score_barh/score_barh_data_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score_barh/score_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/score_barh/score_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_blk_scatter/time_block_scatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/time_blk_scatter/time_block_scatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_block_barh/time_block.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/time_block_barh/time_block.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_block_barh/time_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/time_block_barh/time_block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_block_barh/time_block_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/time_block_barh/time_block_data_extraction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <first_editor relative-caret-position="50">
+                <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,7 +61,6 @@
         <option value="$PROJECT_DIR$/cancellation/cancelled_flight_number.py" />
         <option value="$PROJECT_DIR$/delay_heatmap.py" />
         <option value="$PROJECT_DIR$/Delay_by_month/delay_heatmap.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/airline_stats_triangle/newfile.py" />
         <option value="$PROJECT_DIR$/airline_stats_triangle/airline_stats_triangle_plot.py" />
         <option value="$PROJECT_DIR$/box_line_delay_vs_airline_in2018/box_line_delay_vs_airline_in2018.py" />
@@ -130,13 +89,13 @@
         <option value="$PROJECT_DIR$/src/score_barh/score_barh_data_extraction.py" />
         <option value="$PROJECT_DIR$/src/time_blk_scatter/time_block_scatter.py" />
         <option value="$PROJECT_DIR$/src/time_block_barh/time_block_data_extraction.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="962" />
+    <option name="width" value="834" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -149,6 +108,29 @@
             <path>
               <item name="ECE143_GroupProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ECE143_GroupProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ECE143_GroupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ECE143_GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ECE143_GroupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ECE143_GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="airline_stats_triangle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ECE143_GroupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ECE143_GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cancellation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ECE143_GroupProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ECE143_GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="delay_ontime_flights_number" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +316,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988507" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -670,8 +652,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <first_editor relative-caret-position="50">
+            <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
