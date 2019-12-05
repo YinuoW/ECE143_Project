@@ -3,6 +3,10 @@ import pandas as pd
 import seaborn as sns
 import re
 
+'''
+This function generates the scatter plot of all flights of each airline, with the delay time as x-axis. 
+'''
+
 data_dir = "../../data/2018.csv"
 airline2018_dir = '../../data/airline2018_lookup.csv'
 
