@@ -1,4 +1,6 @@
-# This file plots the boxline of airline delay time
+'''
+This file produces the boxline of airline delay time for all flights in 2018
+'''
 
 import pandas as pd
 
