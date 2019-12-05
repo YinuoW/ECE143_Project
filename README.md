@@ -22,9 +22,16 @@ Use `merge.py` to generate our final dataset which contains all the data in year
 
 This is the folder contains our datasets.
 
-#### Source code folders
+#### `src` folder
 
-For all the other folders except data folders, there are source code files making the visualization.
+This folder contains all the source code files making the visualization.
+
+##### `Demo` folder
+
+This folder contains the jupyter notebook for the demo.
+
+##### Other folders
+
 The folder names are summary of the relevant problems we concern.
 
 There are `.py` files in each folder. 
@@ -38,14 +45,40 @@ There are `.py` files in each folder.
 Since our main dataset is too large to upload, you will need to generate it from raw data.
 To get the `2018.csv`, run the `merge.py` first.
 
-#### Step2: select one folder and get the corresponding extracted data from the dataset
+> location: root directory
+
+> command: `$python3 merge.py`
+
+
+#### Step2: select one folder in the `src` and get the corresponding extracted data from the dataset
 
 In some folders, there are source files ending with `extraction`.
 Run these files first to get the extracted `.csv` files to make the plots.
 
+Take the folder `airline_stats_triangle` for example:
+
+> location: "src/airline_stats_triangle"
+
+> command: `$run src/airline_stats_triangle/airline_stats_triangle_plot_data_extraction.py`
+
 #### Step3: genetate plots
 
 Run the files without `extraction` to generate the plots.
+
+Take the folder `airline_stats_triangle` for example:
+
+> location: "src/airline_stats_triangle"
+
+> command: `$run src/airline_stats_triangle/airline_stats_triangle_plot.py`
+
+In some folders, there is no file ending with `extraction`.
+Then run the `.py` files directly.
+
+Take the folder `cancellation` for example:
+
+> location: "src/cancellation"
+
+> command: `$run src/cancellation/total_cancellation.py`
 
 ## 3. Third-party modules
 
