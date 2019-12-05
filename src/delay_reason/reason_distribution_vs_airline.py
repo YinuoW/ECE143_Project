@@ -13,7 +13,7 @@ code_name = dict()
 for idx, air in enumerate(airlines_code):
     code_name[air] = airlines_name[idx]
 
-keylist = ['Southwest Airlines Co.', 'JetBlue Airways', 'Endeavor Air Inc.', 'PSA Airlines Inc.', 'United Air Lines Inc.', 'Mesa Airlines Inc.', 'ExpressJet Airlines Inc.', 'Envoy Air', 'Spirit Air Lines', 'Alaska Airlines Inc.', 'Republic Airline', 'American Airlines Inc.', 'Allegiant Air', 'SkyWest Airlines Inc.', 'Delta Air Lines Inc.', 'Frontier Airlines Inc.', 'Hawaiian Airlines Inc.', 'Virgin America']
+keylist=['Southwest Airlines Co.', 'Delta Air Lines Inc.', 'American Airlines Inc.', 'SkyWest Airlines Inc.', 'United Air Lines Inc.', 'Republic Airline', 'JetBlue Airways', 'Envoy Air', 'PSA Airlines Inc.', 'Endeavor Air Inc.', 'Alaska Airlines Inc.', 'Mesa Airlines Inc.', 'ExpressJet Airlines Inc.', 'Spirit Air Lines', 'Frontier Airlines Inc.', 'Allegiant Air', 'Hawaiian Airlines Inc.', 'Virgin America']
 
 carrier_delay = list()
 for i in keylist[0:10]:
@@ -21,6 +21,7 @@ for i in keylist[0:10]:
         if code_name[key] == i:
             i = key
     carrier_delay.append(df.loc[df['OP_CARRIER']==i]['CARRIER_DELAY'].sum())
+print(carrier_delay)
 
 whether_delay = list()
 for i in keylist[0:10]:
@@ -28,6 +29,7 @@ for i in keylist[0:10]:
         if code_name[key] == i:
             i = key
     whether_delay.append(df.loc[df['OP_CARRIER']==i]['WEATHER_DELAY'].sum())
+print(whether_delay)
 
 aircraft_delay = list()
 for i in keylist[0:10]:
@@ -35,6 +37,7 @@ for i in keylist[0:10]:
         if code_name[key] == i:
             i = key
     aircraft_delay.append(df.loc[df['OP_CARRIER']==i]['LATE_AIRCRAFT_DELAY'].sum())
+print(aircraft_delay)
 
 nas_delay = list()
 for i in keylist[0:10]:
@@ -42,6 +45,8 @@ for i in keylist[0:10]:
         if code_name[key] == i:
             i = key
     nas_delay.append(df.loc[df['OP_CARRIER']==i]['NAS_DELAY'].sum())
+print(nas_delay)
+
 
 security_delay = list()
 for i in keylist[0:10]:
@@ -49,6 +54,7 @@ for i in keylist[0:10]:
         if code_name[key] == i:
             i = key
     security_delay.append(df.loc[df['OP_CARRIER']==i]['SECURITY_DELAY'].sum())
+print(security_delay)
 
 fig = go.Figure(go.Bar(x=keylist[0:10], y=carrier_delay, name='Carrier delay',marker_color='goldenrod'))
 fig.add_trace(go.Bar(x=keylist[0:10], y=security_delay, name='Security delay'))

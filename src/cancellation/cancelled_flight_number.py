@@ -22,7 +22,7 @@ cancel_group = df.groupby(['OP_CARRIER'])['CANCELLED'].sum().sort_values(ascendi
 cancel_group = cancel_group.reset_index()
 cancel_group['OP_CARRIER'] = cancel_group['OP_CARRIER'].replace(code_name)
 
-keylist = ['Southwest Airlines Co.', 'JetBlue Airways', 'Endeavor Air Inc.', 'PSA Airlines Inc.', 'United Air Lines Inc.', 'Mesa Airlines Inc.', 'ExpressJet Airlines Inc.', 'Envoy Air', 'Spirit Air Lines', 'Alaska Airlines Inc.', 'Republic Airline', 'American Airlines Inc.', 'Allegiant Air', 'SkyWest Airlines Inc.', 'Delta Air Lines Inc.', 'Frontier Airlines Inc.', 'Hawaiian Airlines Inc.', 'Virgin America']
+keylist = ['Southwest Airlines Co.', 'Delta Air Lines Inc.', 'American Airlines Inc.', 'SkyWest Airlines Inc', 'United Air Lines Inc', 'Republic Airline', 'JetBlue Airways', 'Envoy Air', 'PSA Airlines Inc', 'Endeavor Air Inc.', 'Alaska Airlines Inc.', 'Mesa Airlines Inc.', 'ExpressJet Airlines Inc.', 'Spirit Air Lines', 'Frontier Airlines Inc.', 'Allegiant Air', 'Hawaiian Airlines Inc.', 'Virgin America']
 valuelist = [1352552, 949283, 916818, 774137, 621565, 316090, 305010, 296001, 278457, 245917, 245761, 215138, 202890, 176178, 120035, 96221, 83723, 17670]
 df_ = pd.DataFrame({'Airlines': keylist[0:10], 'Number of Flights' : valuelist[0:10]})
 df_[['Airlines','Number of Flights']]

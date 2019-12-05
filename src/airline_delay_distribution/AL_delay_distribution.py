@@ -25,10 +25,6 @@ code_name = dict()
 for idx, air in enumerate(airlines_code):
     code_name[air] = airlines_name[idx]
 
-airline_name_2018 = list()
-for air in set(df['OP_CARRIER']):
-    airline_name_2018.append(code_name[air])
-
 df3 = df.loc[:, ['OP_CARRIER', 'ARR_DELAY']]
 df3['OP_CARRIER'] = df3['OP_CARRIER'].replace(code_name)
 qualitative_colors = sns.color_palette("Set3", 18)
