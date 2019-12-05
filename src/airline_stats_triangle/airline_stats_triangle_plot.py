@@ -3,6 +3,9 @@ This file plot the scoring map of 6 airlines:
 'Endeavor Air','American Airlines','JetBlue Airways','Delta Air Lines',
 'Envoy Air' , 'PSA Airlines' , 'SkyWest Airlines' , 'United Airlines' ,
 'Southwest Airlines'
+
+There are 3 parameters in our scoring system: 'Departure delay', 'Arrival delay', 'Cancellations'.
+The closer the score to 1, the better the airline.
 '''
 import pandas as pd
 import numpy as np
