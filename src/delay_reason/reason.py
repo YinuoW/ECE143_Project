@@ -1,3 +1,13 @@
+'''
+This file creates the bar chart for reasons for flight departure delay.
+There are 4 different reasons:
+CARRIER_DELAY: plane arrives at gate late.
+WEATHER_DELAY: plane delays because of dangerous weathers.
+SECURITY_DELAY: plane delays due to security reasons in airport/airplane.
+LATE_AIRCRAFT_DELAY: plane delays because of maintanence or safety reasons.
+'''
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
