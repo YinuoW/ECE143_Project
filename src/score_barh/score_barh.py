@@ -1,4 +1,6 @@
-# This file generates the sore of each airline
+'''
+This file generates the graphs for the score of each airline based the csv file.
+'''
 
 import pandas as pd
 import numpy as np
