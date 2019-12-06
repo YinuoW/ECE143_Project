@@ -1,3 +1,9 @@
+'''
+This file extracts the data from all flights in 2018 to form a csv file that contains 
+all the time blocks for delays of each airline.
+'''
+
+
 import pandas as pd
 
 file='../../data/2018.csv'
