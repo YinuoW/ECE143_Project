@@ -1,3 +1,6 @@
+'''
+This file plots the delay of each flight by month.  
+'''
 import datetime
 import pandas as pd
 import plotly.graph_objs as go
