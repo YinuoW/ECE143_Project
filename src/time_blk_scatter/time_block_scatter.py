@@ -1,3 +1,7 @@
+'''
+This file creates a scatter plot for the departure delay time block. 
+'''
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
