@@ -1,3 +1,7 @@
+'''
+This graph produces the maps of flight delays across the US by state.
+'''
+
 import pandas as pd
 import plotly.graph_objects as go
 
