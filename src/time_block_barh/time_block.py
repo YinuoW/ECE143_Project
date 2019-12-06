@@ -1,4 +1,10 @@
-# This plot generates the time blocks when flights delays
+'''
+This plot generates the delays for each time block as follows:
+1. 6am to 12pm
+2. 12pm to 6 pm
+3. 6pm to 6am
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
