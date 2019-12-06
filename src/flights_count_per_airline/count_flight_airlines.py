@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+'''
+This file plots the flight counts for each airline.
+'''
+
 data_dir = "../../data/2018.csv"
 airline2018_dir = '../../data/airline2018_lookup.csv'
 
