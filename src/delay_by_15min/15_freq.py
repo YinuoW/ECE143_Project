@@ -1,3 +1,9 @@
+'''
+This file plots the delay of each flight by time.
+Each flight departure is delayed by either less than or more than 15 mins.
+
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
