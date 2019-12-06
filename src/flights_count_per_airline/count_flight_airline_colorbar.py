@@ -1,4 +1,6 @@
-# generate the total number of flights with color bar
+'''
+This file generates the bar chart of the total flights for each airline.
+'''
 import pandas as pd
 from plotly.offline import iplot, init_notebook_mode
 import plotly.graph_objs as go
