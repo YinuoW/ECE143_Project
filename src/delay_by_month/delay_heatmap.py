@@ -1,3 +1,9 @@
+'''
+This file creates the heatmap for total time of delays per month for each airline.
+Plot the heatmap from the delay_heatmap.csv created by the data extraction function.
+'''
+
+
 import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
