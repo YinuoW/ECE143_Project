@@ -1,3 +1,8 @@
+'''
+This file extracts the delay rates for each of the airlinse 
+and compiles them into a csv file for each airline.
+'''
+
 import pandas as pd
 
 file='../../data/2018.csv'
