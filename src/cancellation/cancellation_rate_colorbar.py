@@ -1,4 +1,10 @@
-# cancellation rate of each airline with color bar
+'''
+
+This file produces the cancellation rate of each airline in the form of a stacked bar chart.
+The airlines are ranked in descending order of number of cancellations for each airline.
+'''
+
+
 import pandas as pd
 import plotly.graph_objs as go
 from plotly.offline import iplot
