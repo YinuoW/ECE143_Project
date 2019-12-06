@@ -1,3 +1,9 @@
+'''
+This file extracts the necessary information from all 2018 flights to create the scoring data
+and compiles them into a csv file for each airline according to months.
+This allows easier generation of the bar plot. 
+'''
+
 import pandas as pd
 
 file='../../data/2018.csv'
