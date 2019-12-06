@@ -2,6 +2,10 @@ import datetime
 import pandas as pd
 import plotly.graph_objs as go
 
+'''
+This file plots the number of cancellations for each month.
+'''
+
 data_dir = "../../data/2018.csv"
 df = pd.read_csv(data_dir)
 
