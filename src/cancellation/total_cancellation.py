@@ -1,4 +1,6 @@
-# cancellation rate of each airline with color bar
+''' 
+This file plots the cancellation rate of each airline as a bar chart.
+'''
 import pandas as pd
 import plotly.graph_objs as go
 from plotly.offline import iplot
