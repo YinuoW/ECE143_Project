@@ -1,3 +1,9 @@
+'''
+This file extracts the necessary data from the 2018.csv for easier compilation of images.
+The data extracted is the count for each of the reasons for delay, and is done for each airline.
+File output: reasons_vs_airline.csv
+'''
+
 import pandas as pd
 
 file='../../data/2018.csv'
