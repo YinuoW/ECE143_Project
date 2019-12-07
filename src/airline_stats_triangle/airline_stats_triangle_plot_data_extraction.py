@@ -1,4 +1,11 @@
-# This file extract the dataframe for drawing the scoring plots
+'''
+This file extract the necessary information from 2018.csv to another output file.
+The output csv file contains total departure delay times, arrival delay times, and cancelled times for each airline.
+
+Input file: 2018.csv
+Output file: airlines_stats.csv
+
+'''
 
 import pandas as pd
 
