@@ -1,5 +1,10 @@
 import pandas as pd
 
+'''
+This file extracts necessary information from 2018.csv to create the total number of delay flights and and on time flights.
+Output: delay_number.csv
+'''
+
 file='../../data/2018.csv'
 flights=pd.read_csv(file) # all flights
 un_flights=flights.loc[flights['CANCELLED']==0]
