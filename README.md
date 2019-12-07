@@ -11,6 +11,25 @@ Group members:
 |Zhao, Shuheng|shzhao@ucsd.edu|
 |Wang, Yinuo|yiw010@ucsd.edu|
 
+### Overview 
+
+This project aims to provide analysis of flight delays and cancellations for our top 10 airlines in 2018.
+
+These airlines are ranked according to the volumes of flights, and the top 10 airlines with the most number of flights are chosen to do our analysis. 
+
+These analysis are conducted to provide us with the understanding of the most appropriate time of the day and year to travel, rate of delays and cancellations, as well as reasons for delay.
+
+These analysis are then compiled to form a scoring system so the user can decide to which airline to take based on
+arrival delays, departure delays, and cancellations.
+
+Terminology and definitions:
+
+`arrival delays` the flight arrives at the destination location later than expected.
+
+`departure delays` the flight leaves the departed location later than expected.
+
+`cancellations` the flight is cancelled. 
+
 
 ## 1. File Structure
 
