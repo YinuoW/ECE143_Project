@@ -5,6 +5,7 @@ This file generates the graphs for the score of each airline based the csv file.
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+assert isinstance(file,str)
 
 file='score_data.csv'
 score_data=pd.read_csv(file,index_col=0,header=0)
