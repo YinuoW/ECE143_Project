@@ -5,6 +5,7 @@ all the time blocks for delays of each airline.
 
 
 import pandas as pd
+assert isinstance(file,str)
 
 file='../../data/2018.csv'
 flights=pd.read_csv(file) # all flights
