@@ -8,7 +8,6 @@ This allows easier generation of the heat map.
 
 '''
 
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -18,6 +17,9 @@ data_dir = "../../data/2018.csv"
 airline2018_dir = '../../data/airline2018_lookup.csv'
 df_airline2018 = pd.read_csv(airline2018_dir)
 df = pd.read_csv(data_dir)
+
+assert isinstance(data_dir,str)
+assert isinstance(airline2018_dir, str)
 
 airlines_code = list(df_airline2018['Code'])
 airlines_name = list(df_airline2018['Description'])
