@@ -1,3 +1,7 @@
+'''
+This file creates the bar chart distribution for each delay reason for all airlines.
+'''
+
 import pandas as pd
 import plotly.graph_objs as go
 
