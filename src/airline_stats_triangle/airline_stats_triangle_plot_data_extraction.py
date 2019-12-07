@@ -15,6 +15,7 @@ uncancelled_flights=flights.loc[flights['CANCELLED']==0] #data excluding cancell
 airlines=set(flights['OP_CARRIER']) #set of names of airlines
 
 airlines_stats=pd.DataFrame(index=airlines,columns=['dep_delay','arr_delay','cancel_times'])
+
 for name in airlines:
     airlines_stats.loc[name]['dep_delay']= uncancelled_flights.loc[uncancelled_flights['OP_CARRIER']==name]['DEP_DELAY'].mean()
     airlines_stats.loc[name]['arr_delay'] = uncancelled_flights.loc[uncancelled_flights['OP_CARRIER'] == name]['ARR_DELAY'].mean()
