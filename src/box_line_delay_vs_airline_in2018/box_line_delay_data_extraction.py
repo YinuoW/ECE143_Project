@@ -1,7 +1,8 @@
 '''
-This file produces the csv.file of airline delay time for all flights in 2018.
-output csv: delay_vs_airline_in2018.csv
-Output file is used to form boxplot in box_line_delay_data_extraction.py
+This file extract the necessary information from 2018.csv to another output file.
+The output csv file contains departure delay times each airline.
+Input file: 2018.csv
+Output file: delay_vs_airline_in2018.csv
 '''
 
 import pandas as pd
