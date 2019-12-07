@@ -1,6 +1,8 @@
 '''
-This file extracts the dataframe from delay_vs_airline_in2018.py in order to draw the delay box line plots of airlines.
+This file creates the box plot of departure delays for each airline.
+Input file: delay_vs_airline_in2018.csv
 '''
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
