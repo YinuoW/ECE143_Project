@@ -1,4 +1,8 @@
-# This file generates the delay and ontime number of flights for each airline
+''' 
+This file generates the delay and ontime number of flights for each airline.
+Input file: delay_number.csv
+Produces a stacked horizontal bar chart for each airline based on decreasing number of flights for all airlines.
+'''
 
 import pandas as pd
 import numpy as np
@@ -8,6 +12,9 @@ font = {'size':20}
 plt.rc('font', **font)
 
 file='delay_number.csv'
+
+assert isinstance(file,str)
+
 delay_freq=pd.read_csv(file,index_col=0,header=0)
 delay_freq = delay_freq.drop(labels=['AS','EV','F9','G4','HA','NK','VX','YV'])
 airlines=list(delay_freq.index)
