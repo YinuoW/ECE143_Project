@@ -2,8 +2,6 @@
 This file extracts the data from all flights in 2018 to form a csv file that contains 
 all the time blocks for delays of each airline.
 '''
-
-
 import pandas as pd
 
 file='../../data/2018.csv'
@@ -28,4 +26,5 @@ for name in airlines:
         counts[ref[i]]+=list(flights.loc[flights['OP_CARRIER']==name]['DEP_TIME_BLK']).count(i)
     for i in time_block.columns:
         time_block.loc[name][i]=time_block.loc[name][i]/counts[i]
+print('time_block.csv')
 time_block.to_csv('time_block.csv')

@@ -11,4 +11,5 @@ for name in airlines:
     delay_freq.loc[name]['total_flights']=flights.loc[flights['OP_CARRIER']==name].count()['FL_DATE']
     delay_freq.loc[name]['on-time_and_adv']=delay_freq.loc[name]['total_flights']-delay_freq.loc[name]['delay']
 delay_freq=delay_freq.sort_values(by='on-time_and_adv')
+print('delay_number.csv')
 delay_freq.to_csv('delay_number.csv')

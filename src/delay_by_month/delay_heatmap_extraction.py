@@ -3,11 +3,7 @@ This file extracts the total delay times from all 2018 flights
 and compiles them into a csv file for each airline according to months.
 This allows easier generation of the heat map.
 '''
-
-
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import datetime
 
 data_dir = "../../data/2018.csv"
@@ -104,4 +100,5 @@ for op in keylist[0:10]:
     df_month_delaytime_airline[op] = list(monthly_delay.values())
 
 df1_transposed = df_month_delaytime_airline.T
+print('delay_heatmap.csv')
 df1_transposed.to_csv('delay_heatmap.csv')

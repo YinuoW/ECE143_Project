@@ -12,4 +12,5 @@ for name in airlines:
     airlines_stats.loc[name]['dep_delay']= uncancelled_flights.loc[uncancelled_flights['OP_CARRIER']==name]['DEP_DELAY'].mean()
     airlines_stats.loc[name]['arr_delay'] = uncancelled_flights.loc[uncancelled_flights['OP_CARRIER'] == name]['ARR_DELAY'].mean()
     airlines_stats.loc[name]['cancel_times'] = list(flights.loc[flights['OP_CARRIER'] == name]['CANCELLED']).count(1)
+print('airlines_stats.csv')
 airlines_stats.to_csv('airlines_stats.csv')

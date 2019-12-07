@@ -1,87 +1,50 @@
-'''
-
-This file produces the cancellation rate of each airline in the form of a stacked bar chart.
-The airlines are ranked in descending order of number of cancellations for each airline.
-'''
-
-
 import pandas as pd
 import plotly.graph_objs as go
 from plotly.offline import iplot
 
-data_dir = "../../data/2018.csv"
-airline2018_dir = '../../data/airline2018_lookup.csv'
-df_airline2018 = pd.read_csv(airline2018_dir)
-df = pd.read_csv(data_dir)
+def cancellation_rate_colorbar(cancel_group, cancell_count_airlines):
+    '''
+    This file produces the cancellation rate of each airline in the form of a stacked bar chart.
+    The airlines are ranked in descending order of number of cancellations for each airline.
+    :param df: the data frame for all the data in 2018.csv
+    :param code_name: the dictionary recording airline code as key and airline name as value
+    :return: bar chart for total cancellation
+    '''
 
-airlines_code = list(df_airline2018['Code'])
-airlines_name = list(df_airline2018['Description'])
+    assert isinstance(cancel_group, pd.DataFrame)
+    assert isinstance(cancell_count_airlines, pd.DataFrame)
 
-code_name = dict()
-for idx, air in enumerate(airlines_code):
-    code_name[air] = airlines_name[idx]
-
-df4 = df.loc[:,['OP_CARRIER']]
-df4['OP_CARRIER'] = df4['OP_CARRIER'].replace(code_name)
-count = []
-op_list = df4['OP_CARRIER'].unique()
-for op in op_list:
-    c = df4.loc[df4['OP_CARRIER'] == op].count()
-    count.append(c[0])
-
-name_count_dict = dict()
-op_list = df4['OP_CARRIER'].unique()
-for idx, op in enumerate(op_list):
-    name_count_dict[op] = count[idx]
-
-
-name_count_dict_value = list(name_count_dict.values())
-name_count_dict_value.sort(reverse=True)
-name_count_dict_key = list(name_count_dict.keys())
-new_key = list()
-for i in name_count_dict_value:
-    for key in name_count_dict.keys():
-        if name_count_dict[key] == i:
-            new_key.append(key)
-
-name_count_dict_ordered = dict()
-for idx, op in enumerate(new_key):
-    name_count_dict_ordered[op] = name_count_dict_value[idx]
-
-keylist = list(name_count_dict_ordered.keys())
-valuelist = list(name_count_dict_ordered.values())
-df_ = pd.DataFrame({'Airlines': keylist[0:10], 'Number of Flights' : valuelist[0:10]})
-df_[['Airlines','Number of Flights']]
-
-cancel_group = df.groupby(['OP_CARRIER'])['CANCELLED'].sum().sort_values(ascending=False)
-cancel_group = cancel_group.reset_index()
-cancel_group['OP_CARRIER'] = cancel_group['OP_CARRIER'].replace(code_name)
-
-drop_list = list()
-for idx, i in enumerate(cancel_group['OP_CARRIER']):
-    if i not in keylist[0:10]:
-        drop_list.append(idx)
-cancel_group = cancel_group.drop(drop_list)
-cancel_group_new = pd.DataFrame(list(cancel_group['CANCELLED']),index=cancel_group['OP_CARRIER'], columns = {'Cancelled'})
-df_new = pd.DataFrame(list(df_['Number of Flights']), index = df_['Airlines'], columns = {'Numbers'})
-cancell_count_airlines = pd.concat([cancel_group_new, df_new], axis=1, join='inner')
-cancell_count_airlines['Rate'] = cancell_count_airlines['Cancelled'] / cancell_count_airlines['Numbers']
-
-trace = go.Bar(
-    x=cancel_group['OP_CARRIER'],
-    y=cancell_count_airlines['Rate'],
-    marker=dict(
-        color = cancell_count_airlines['Rate'],
-        colorscale='Reds',
-        showscale=True
+    cancell_count_airlines['Rate'] = cancell_count_airlines['Cancelled'] / cancell_count_airlines['Numbers']
+    trace = go.Bar(
+        x=cancel_group['OP_CARRIER'],
+        y=cancell_count_airlines['Rate'],
+        marker=dict(
+            color=cancell_count_airlines['Rate'],
+            colorscale='Reds',
+            showscale=True
+        )
     )
-)
 
-data = [trace]
-layout = go.Layout(
-    title='Cancel rate of each Airline',
-    yaxis = dict(title = 'Airlines'))
+    data = [trace]
+    layout = go.Layout(
+        title='Cancel rate of each Airline',
+        yaxis=dict(title='Airlines'))
 
-fig = go.Figure(data=data, layout=layout)
-fig.update_layout(barmode='group', xaxis_tickangle=45)
-iplot(fig)
+    fig = go.Figure(data=data, layout=layout)
+    fig.update_layout(barmode='group', xaxis_tickangle=45)
+    iplot(fig)
+
+def main():
+    df_airline2018, df = data_loader()
+    code_name = get_full_code2name_dict(df_airline2018)
+    cancel_group, cancell_count_airlines = get_cancelled(df, code_name)
+    cancellation_rate_colorbar(cancel_group, cancell_count_airlines)
+
+if __name__ == '__main__':
+    import sys
+    import os
+
+    module_path = os.path.abspath(os.path.join('..'))
+    sys.path.append(module_path)
+    from utils import data_loader, get_full_code2name_dict, get_cancelled
+    main()

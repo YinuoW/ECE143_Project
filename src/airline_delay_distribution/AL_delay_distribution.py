@@ -1,39 +1,42 @@
 import matplotlib.pyplot as plt
-import pandas as pd
 import seaborn as sns
-import re
+import pandas as pd
 
-'''
-This function generates the scatter plot of all flights of each airline, with the delay time as x-axis. 
-'''
+def AL_delay_distribution(df, code_name):
+    '''
+    This function generates the scatter plot of all flights of top 10 airlines, with the delay time as x-axis.
+    df: the data frame for all the data in 2018.csv
+    code_name: the dictionary recording airline code as key and airline name as value
+    output: scatter plot
+    '''
+    assert isinstance(df, pd.DataFrame)
+    assert isinstance(code_name, dict)
 
-data_dir = "../../data/2018.csv"
-airline2018_dir = '../../data/airline2018_lookup.csv'
+    df = df[['OP_CARRIER', 'ARR_DELAY']]
 
+    to_drop = ['AS', 'EV', 'F9', 'G4', 'HA', 'NK', 'VX', 'YV']
+    df = df[~df['OP_CARRIER'].isin(to_drop)]
 
-df_airline2018 = pd.read_csv(airline2018_dir)
-df = pd.read_csv(data_dir,usecols=['OP_CARRIER','ARR_DELAY'])
+    df3 = df.loc[:, ['OP_CARRIER', 'ARR_DELAY']]
+    df3['OP_CARRIER'] = df3['OP_CARRIER'].replace(code_name)
+    qualitative_colors = sns.color_palette("Set3", 18)
+    ax = sns.stripplot(y="OP_CARRIER", x="ARR_DELAY", data=df3, jitter=True, linewidth=0.2, palette=qualitative_colors)
+    ax.set_xticklabels(['{:2.0f}h{:2.0f}m'.format(*[int(y) for y in divmod(x, 60)])
+                        for x in ax.get_xticks()])
+    ax.set_title('Arrival Delay Distribution of Airlines')
+    plt.show()
 
-airlines_code = list(df_airline2018['Code'])
-airlines_name = list(df_airline2018['Description'])
+def main():
+    df_airline2018, df = data_loader()
+    code_name = get_part_code2name_dict(df_airline2018)
+    AL_delay_distribution(df, code_name)
 
+if __name__ == '__main__':
+    import sys
+    import os
 
-to_drop= ['AS','EV','F9','G4','HA','NK','VX','YV']
-df = df[~df['OP_CARRIER'].isin(to_drop)]
+    module_path = os.path.abspath(os.path.join('..'))
+    sys.path.append(module_path)
+    from utils import data_loader, get_part_code2name_dict
 
-# remove all words within brackets
-
-airlines_name = [re.sub("[\(\[].*?[\)\]]", "", elem) for elem in airlines_name]
-
-code_name = dict()
-for idx, air in enumerate(airlines_code):
-    code_name[air] = airlines_name[idx]
-
-df3 = df.loc[:, ['OP_CARRIER', 'ARR_DELAY']]
-df3['OP_CARRIER'] = df3['OP_CARRIER'].replace(code_name)
-qualitative_colors = sns.color_palette("Set3", 18)
-ax = sns.stripplot(y="OP_CARRIER", x="ARR_DELAY", data=df3, jitter=True,linewidth=0.2, palette = qualitative_colors)
-ax.set_xticklabels(['{:2.0f}h{:2.0f}m'.format(*[int(y) for y in divmod(x,60)])
-                          for x in ax.get_xticks()])
-ax.set_title('Arrival Delay Distribution of Airlines')
-plt.show()
+    main()
