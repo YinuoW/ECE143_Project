@@ -1,5 +1,7 @@
 '''
 This file generates the bar chart of the total flights for each airline.
+Input file: 2018.csv, airline2018_lookup.csv
+
 '''
 import pandas as pd
 from plotly.offline import iplot, init_notebook_mode
