@@ -3,10 +3,11 @@ This file extracts the necessary information from all 2018 flights to create the
 and compiles them into a csv file for each airline according to months.
 This allows easier generation of the bar plot. 
 '''
-
 import pandas as pd
+assert isinstance(file,str)
 
 file='../../data/2018.csv'
+
 flights=pd.read_csv(file) #read file
 uncancelled_flights=flights.loc[flights['CANCELLED']==0] #data excluding cancelled flights
 airlines=set(flights['OP_CARRIER']) #set of names of airlines
