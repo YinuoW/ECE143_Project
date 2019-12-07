@@ -1,6 +1,10 @@
 '''
 This file creates the heatmap for total time of delays per month for each airline.
 Plot the heatmap from the delay_heatmap.csv created by the data extraction function.
+
+:param data_dir: name of csv file
+:type data_dir: str
+
 '''
 
 
