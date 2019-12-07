@@ -1,4 +1,6 @@
-# This is used to generate the `2018.csv` using raw data
+'''
+This is used to generate '2018.csv' using raw data from Bureau Transposition Statistics.
+'''
 import os
 import glob
 import pandas as pd
