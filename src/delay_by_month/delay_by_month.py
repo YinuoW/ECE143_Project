@@ -1,5 +1,9 @@
 '''
-This file plots the delay of each flight by month.  
+This file plots the delay of each flight by month. 
+
+:param data_dir: csv file (2018.csv)
+:type data_dir: string 
+
 '''
 import datetime
 import pandas as pd
@@ -38,6 +42,7 @@ for i in month_dict:
     for d in month_dict[i]:
         monthly_delay[i] += df_day_delay[d]
 
+        
 layout = go.Layout(title='Number of delayed flights for each month',
                     xaxis={'title':'Months'},
                     yaxis={'title':'Number of Flights'},
