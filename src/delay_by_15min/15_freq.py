@@ -1,7 +1,7 @@
 '''
 This file plots the delay of each flight by time.
 Each flight departure is delayed by either less than or more than 15 mins.
-
+Input file: 2018.csv
 '''
 
 import pandas as pd
