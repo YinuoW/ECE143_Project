@@ -6,6 +6,8 @@ This file plot the scoring map of 6 airlines:
 
 There are 3 parameters in our scoring system: 'Departure delay', 'Arrival delay', 'Cancellations'.
 The closer the score to 1, the better the airline.
+
+Input file: airlines_stats.csv
 '''
 import pandas as pd
 import numpy as np
