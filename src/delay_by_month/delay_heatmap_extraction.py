@@ -2,6 +2,10 @@
 This file extracts the total delay times from all 2018 flights
 and compiles them into a csv file for each airline according to months.
 This allows easier generation of the heat map.
+
+:param data_dir: csv file to be read to extract data from
+:type data_dir: str
+
 '''
 
 
