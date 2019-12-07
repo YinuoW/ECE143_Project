@@ -8,6 +8,7 @@ This plot generates the delays for each time block as follows:
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+assert isinstance(file,str)
 
 file='time_block.csv'
 time_block=pd.read_csv(file,index_col=0,header=0)
