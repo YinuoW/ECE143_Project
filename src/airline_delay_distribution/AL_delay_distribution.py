@@ -10,6 +10,8 @@ This function generates the scatter plot of all flights of each airline, with th
 data_dir = "../../data/2018.csv"
 airline2018_dir = '../../data/airline2018_lookup.csv'
 
+assert isinstance(data_dir,str)
+assert isinstance(airline2018_dir,str)
 
 df_airline2018 = pd.read_csv(airline2018_dir)
 df = pd.read_csv(data_dir,usecols=['OP_CARRIER','ARR_DELAY'])
