@@ -4,6 +4,7 @@ This file creates a scatter plot for the departure delay time block.
 
 import pandas as pd
 import matplotlib.pyplot as plt
+assert isinstance(file,str)
 
 file='../../data/2018.csv'
 flights=pd.read_csv(file) # all flights
