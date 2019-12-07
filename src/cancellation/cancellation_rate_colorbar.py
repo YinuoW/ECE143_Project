@@ -1,7 +1,8 @@
 '''
-
 This file produces the cancellation rate of each airline in the form of a stacked bar chart.
 The airlines are ranked in descending order of number of cancellations for each airline.
+Input file = airline2018_lookup.csv, 2018.csv
+
 '''
 
 
